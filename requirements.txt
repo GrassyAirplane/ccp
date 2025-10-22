@@ -1,4 +1,7 @@
 pytesseract
 Pillow
-sqlite-utils
 requests
+faster-whisper
+pyaudio
+webrtcvad
+numpy

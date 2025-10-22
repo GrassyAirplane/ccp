@@ -56,7 +56,7 @@ app.post('/api/chat', async (req, res) => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            model: 'llama3',
+            model: 'llama3:latest',
             prompt: prompt,
             stream: false
           })

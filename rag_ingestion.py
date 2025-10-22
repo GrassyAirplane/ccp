@@ -40,7 +40,7 @@ def process_rag_frames():
             resp = requests.post(
                 OLLAMA_URL,
                 json={"model": MODEL, "prompt": full_prompt, "stream": False},
-                timeout=350
+                timeout=500
             )
             if resp.status_code != 200:
                 print(f"[RAG ERROR] {resp.status_code}: {resp.text}")
